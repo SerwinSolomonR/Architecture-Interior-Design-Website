@@ -1,0 +1,134 @@
+/* Container and Background */
+.contact-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 64px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid Background Lines */
+.bg-grid {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  pointer-events: none;
+}
+
+.bg-grid-line {
+  border-right: 1px solid #f0f0f0;
+}
+
+/* Layout Wrapper */
+.contact-wrapper {
+  max-width: 1100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  z-index: 10;
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  background-color: #E8E8E8;
+  border: none;
+  padding: 16px;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+/* Button Styling */
+.subscribe-btn {
+  background-color: #C4A484;
+  color: white;
+  padding: 16px 32px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 13px;
+  width: max-content;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+  background-color: #b39373;
+}
+
+/* Info Cards */
+.info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+}
+
+.info-card {
+  background: white;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f9f9f9;
+}
+
+.icon-wrapper {
+  color: #C4A484;
+  display: flex;
+  align-items: center;
+}
+
+.info-text h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+}
+
+.info-text p {
+  margin: 4px 0 0;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

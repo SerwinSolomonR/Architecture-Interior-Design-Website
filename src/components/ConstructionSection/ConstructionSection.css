@@ -1,0 +1,251 @@
+.main-container-rek {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  background-color: #fff;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+.header-flex-rek {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.main-title-rek {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.stats-column-rek {
+  width: 300px;
+}
+
+.stat-row-rek {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.stat-val-rek {
+  font-size: 32px;
+  color: #c19a6b;
+  font-weight: bold;
+}
+
+.stat-desc-rek {
+  font-size: 14px;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+/* Grid Top */
+.grid-top-rek {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  gap: 20px;
+  margin-bottom: 5px;
+}
+
+.grid-item-rek img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Blueprint Section */
+.blueprint-section-rek {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+.para-text-rek {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.contact-card-rek {
+  margin-top: 40px;
+}
+
+.icon-item-rek {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.icon-square-rek {
+  width: 65px;
+  height: 65px;
+  background-color: #c19a6b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 27px;
+}
+
+.details-rek h5 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.details-rek p {
+  margin: 2px 0 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.plan-side-rek {
+  text-align: center;
+}
+
+.floor-img-rek {
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.plan-label-rek {
+  margin-top: 20px;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+/* Gallery Middle */
+.gallery-mid-rek {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.gallery-img-rek img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.bottom-note-rek {
+  font-size: 16px;
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 60px;
+}
+
+/* Video Section */
+.video-banner-rek {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.video-banner-rek img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-btn-rek {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 70px;
+  background-color: rgba(193, 154, 107, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.play-triangle-rek {
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 20px solid white;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 992px) {
+  .header-flex-rek, .grid-top-rek, .blueprint-section-rek, .gallery-mid-rek {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grid-item-rek img { height: 300px; }
+  .blueprint-section-rek { gap: 40px; }
+}
+
+
+.floor-plan-svg-rek {
+  width: 100%;
+  max-width: 500px; 
+  margin: 0 auto;
+  background-color: #fdfdfd;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  border: 1px solid #f0f0f0;
+}
+
+.floor-plan-svg-rek svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.floor-plan-svg-rek text {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+
+.icon-square-rek i {
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.icon-item-rek:hover .icon-square-rek i {
+  transform: scale(1.2);
+}
+
+
+.video-banner-rek {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-top: 40px;
+  background: #eee;
+}
+
+.overlay-btn-rek {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 60px;
+  background-color: rgba(193, 154, 107, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+}

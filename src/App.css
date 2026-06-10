@@ -1,0 +1,15 @@
+::selection {
+  background-color: #c6a47e; 
+}
+
+:global(.fade-in) {
+  opacity: 0;
+  animation: pureFadeIn 1.4s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  will-change: opacity; 
+}
+
+@keyframes pureFadeIn {
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+
+.stats-outer-wrapper {
+  position: relative;
+  background-color: #fdfdfd;
+  padding: 120px 0;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif; 
+}
+
+.bg-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  pointer-events: none;
+}
+
+.bg-lines span {
+  width: 1px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.stats-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.stat-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  color: #c4a47c; 
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  font-weight: 600;
+  margin: 18px 0 35px 0;
+  letter-spacing: 2px;
+  max-width: 200px;
+  text-transform: uppercase;
+}
+
+.stat-icon-wrapper {
+  width: 68px;
+  height: 68px;
+  color: #c4a47c;
+  opacity: 0.8;
+  padding: 2px;
+}
+
+.stat-icon-wrapper svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (max-width: 900px) {
+  .stats-content {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .stat-box {
+    flex: 1 1 40%;
+  }
+  .bg-lines {
+    display: none;
+  }
+}

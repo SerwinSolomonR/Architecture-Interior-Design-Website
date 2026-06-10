@@ -1,0 +1,34 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+}
+
+.top-arrow-btn {
+  background-color: #c4a47e; 
+  color: #ffffff;
+  border: none;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.top-arrow-btn:hover {
+  background-color: #b3916b; 
+}
+.scroll-to-top {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

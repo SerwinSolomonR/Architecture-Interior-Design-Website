@@ -1,0 +1,108 @@
+.watch-section {
+  display: flex;
+  min-height: 100vh;
+}
+
+
+.watch-left {
+  width: 50%;
+  position: relative;
+}
+
+.watch-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #c8a27a;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.play-btn:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+
+.watch-right span {
+  color: #c8a27a;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.step {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 33px;
+}
+.watch-right {
+  width: 50%;
+  padding: 20px 80px;
+  background: #f9f9f9;
+}
+
+.watch-right h2 {
+  font-size: 36px;
+  letter-spacing: 4px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color:#222;
+  margin-bottom: 40px;
+  line-height: 1.4;
+
+}
+.step h4 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #222;
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.step h4::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: #c8a27a;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.step p {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.6;
+  max-width: 420px;
+}

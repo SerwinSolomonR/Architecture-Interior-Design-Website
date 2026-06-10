@@ -1,0 +1,98 @@
+.worldwide-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-grid {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.map-grid-line {
+  border-right: 1px solid #f0f0f0;
+}
+
+.heading-container {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 50px;
+}
+
+.worldwide-heading {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.text-dark {
+  color: #1a1a1a;
+}
+
+.text-gold {
+  color: #C4A484; 
+}
+
+
+.zigzag-decoration {
+  margin-top: 15px;
+  height: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='10' viewBox='0 0 40 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 5L5 0L10 5L15 0L20 5L25 0L30 5L35 0L40 5' stroke='%23C4A484' stroke-width='1'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.6; 
+}
+
+/* Marker Pins */
+.map-marker {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #C4A484;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 4px rgba(196, 164, 132, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.map-marker:hover {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+
+.marker-1 { top: 35%; left: 16%; } 
+.marker-2 { top: 30%; left: 30%; } 
+.marker-3 { top: 20%; left: 38%; } 
+.marker-4 { top: 70%; left: 34%; } 
+.marker-5 { top: 30%; left: 56%; } 
+.marker-6 { top: 58%; left: 52%; } 
+.marker-7 { top: 25%; left: 74%; } 
+.marker-8 { top: 46%; left: 68%; } 
+.marker-9 { top: 68%; left: 82%; } 

@@ -1,0 +1,301 @@
+/* ==========================================================================
+   1. MAIN LAYOUT & WRAPPER
+   ========================================================================== */
+
+.footer-section-ft {
+  background-color: #fcfcfc;
+  background-image: url('https://www.transparenttextures.com/patterns/blueprint.png');
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.footer-top-ft {
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   2. LOGO & DESCRIPTION
+   ========================================================================== */
+
+.footer-logo-ft h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #222;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer-logo-ft .subtitle-ft {
+  font-size: 14px;
+  color: #c6a47e;
+  letter-spacing: 8px;
+  margin-top: -5px;
+  font-weight: 500;
+}
+
+.footer-description-ft {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 40px auto;
+  max-width: 650px;
+}
+
+/* ==========================================================================
+   3. SUBSCRIBE BOX
+   ========================================================================== */
+
+.subscribe-container-ft {
+  display: flex;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.subscribe-container-ft input {
+  flex: 1;
+  padding: 25px 30px;
+  border: none;
+  background: #eee;
+  outline: none;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.subscribe-btn-ft {
+  background-color: #c6a47e;
+  color: white;
+  border: none;
+  padding: 0 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.subscribe-btn-ft span {
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.subscribe-btn-ft:hover {
+  background-color: #b38f66;
+}
+
+/* ==========================================================================
+   4. LINKS & CONTACT
+   ========================================================================== */
+
+.footer-links-ft {
+  margin-bottom: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: 2px;
+}
+
+.footer-links-ft span {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.footer-contact-ft {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.footer-contact-ft p {
+  color: #c6a47e;
+  display: inline;
+}
+
+.footer-contact-ft span {
+  color: #222;
+}
+
+/* ==========================================================================
+   5. BOTTOM BAR & SOCIALS
+   ========================================================================== */
+
+.footer-bottom-ft {
+  background-color: #1a1a1a;
+  color: #999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  font-size: 14px;
+}
+
+.footer-bottom-ft .highlight-ft {
+  color: #c6a47e;
+}
+
+.social-icons-ft {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons-ft a {
+  background: #333;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+  border-radius: 4px;
+}
+
+.social-icons-ft a:hover {
+  background: #c6a47e;
+  transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   6. REFINED ATTRIBUTION SECTION
+   ========================================================================== */
+
+.footer-attribution-ft {
+  background-color: #111;
+  padding: 60px 20px;
+  border-top: 1px solid #222;
+  color: #fff;
+}
+
+.attribution-container-ft {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.org-name-ft {
+  font-size: 18px;
+  font-weight: 800;
+  color: #918686;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-top: 0px;
+}
+.org-name-ft p{
+  margin-top: 10px;
+}
+
+.attribution-grid-ft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  border: 1px solid #222;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Profile Side */
+.attribution-profile-ft {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+}
+
+.creater-image-ft {
+  width: 90px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #c6a47e;
+
+  transition: 0.4s ease;
+}
+
+.attribution-profile-ft:hover .creater-image-ft {
+  
+  transform: scale(1.05);
+}
+
+.label-ft {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #c6a47e;
+  letter-spacing: 2px;
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.name-ft, .value-ft {
+  font-size: 18px;
+  font-weight: 600;
+  color: #eee;
+  margin: 0;
+}
+
+.portfolio-link-ft {
+  font-size: 16px;
+  color: #c1b7b7;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 8px;
+  transition: 0.3s;
+}
+
+.portfolio-link-ft:hover {
+  color: #c6a47e;
+}
+
+.attribution-info-ft {
+  display: flex;
+  gap: 50px;
+  text-align: right;
+}
+
+/* ==========================================================================
+   7. RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .attribution-grid-ft {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .attribution-profile-ft {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .attribution-info-ft {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    border-top: 1px solid #222;
+    padding-top: 30px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-bottom-ft {
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+  
+  .subscribe-container-ft {
+    flex-direction: column;
+  }
+  
+  .subscribe-btn-ft {
+    padding: 20px;
+  }
+}
