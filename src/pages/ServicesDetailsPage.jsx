@@ -1,5 +1,5 @@
 import CommonHero from "../components/PageHeroComponent/CommonHero";
-import BreadcrumbHero from "../components/ServicesDetailsbredHero/Breadcrumhero";
+import BreadcrumbHero from "../components/ServicesDetailsbredHero/BreadcrumHero";
 import LogoLoop from "../components/LogoLoop/LogoLoop";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
 import TeamSection from "../components/TeamSection/TeamSection";
